@@ -1,5 +1,0 @@
-x=input("enter")
-f=open(x)
-a = f.read()
-print(a)
-f.close()
