@@ -32,7 +32,7 @@ Directions: View map fass'''
 
 # pattern1 = re.compile(r'.')  # . = any character
 # pattern1 = re.compile(r'^Tata')  # ^ = starts with the following character
-# pattern1 = re.compile(r'fass$')  # $ = ends with the following character
+# pattern1 = re.compile(r'fass$')  # $ = ends with the preceding character
 # pattern1 = re.compile(r'as*')  # * =  Zero or more occurrences
 # in this case the returning string must have one 'a' and 0 or more occurrences of 'i'
 # pattern1 = re.compile(r'as+')  # + =  one or more occurrences
@@ -57,5 +57,6 @@ pattern1 = re.compile(r'\d{5}-\d{4}')
 # exactly {4} occurrences
 
 matches = pattern1.finditer(mystr)
+print(type(matches))
 for match in matches:
     print(match)

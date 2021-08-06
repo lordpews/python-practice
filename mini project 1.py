@@ -45,10 +45,10 @@ class Library:
         bookl.pop(retbook)
         print("list of books and lender:\n", bookl)
 
-
 bookl = {}
 
 library1 = Library(["maths book", "physics book", "biology book", "note book"], "school library")
+
 
 if __name__ == '__main__':
     while True:
@@ -59,9 +59,9 @@ if __name__ == '__main__':
                            "4: return book \n"))
         if choice == 1:
             library1.displaybooks()
-        if choice == 2:
+        elif choice == 2:
             library1.lendbook()
-        if choice == 3:
+        elif choice == 3:
             library1.addbook()
-        if choice == 4:
+        elif choice == 4:
             library1.returnbook()
